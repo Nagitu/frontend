@@ -6,26 +6,27 @@ const FindMe = () => {
     <div
     className=" text-gray-600 bg-white dark:text-white dark:bg-blue-900 p-0 md:p-6 mx-8 rounded-lg flex flex-col gap-5 md:flex-row justify-between items-center">
     <div className="flex items-center w-full md:w-3/4">
-        <div className="border-4 border-green-500 rounded-full p-1">
-            <Image
-                src="/avatar.jpeg"
-                width={120}
-                height={120}
-                alt="Avatar"
-                className="rounded-full"/>
-        </div>
-        <div className="ml-4 w-3/4">
-            <h2 className="md:text-2xl dark:text-white font-bold">Biography</h2>
-            <p className='text-md'>
-                Getting Buff +1 for learning, Buff +2 for documentation, and more buff on
-                managing the team. Excited about building robust web applications with
-                <span className="text-blue-400">Node.js</span>
-                and crafting dynamic user interfaces with
-                <span className="text-blue-400">React.js</span>
-            </p>
-
-        </div>
+    <div
+        className="border-4 h-16 md:h-32 w-16 md:w-32 border-green-500 rounded-full p-1 relative">
+        <Image
+            src="/avatar.jpeg"
+            fill
+            objectFit="cover"
+            alt="Avatar"
+            className="rounded-full"/>
     </div>
+    <div className="ml-4 w-3/4">
+        <h2 className="md:text-2xl dark:text-white font-bold">Biography</h2>
+        <p className='text-xs md:text-lg'>
+            Getting Buff +1 for learning, Buff +2 for documentation, and more buff on
+            managing the team. Excited about building robust web applications with
+            <span className="text-blue-400">Node.js</span>
+            and crafting dynamic user interfaces with
+            <span className="text-blue-400">React.js</span>
+        </p>
+
+    </div>
+</div>
 
     <div className="text-right w-full md:w-1/2 flex flex-col items-center justify-center">
         <h3 className="text-md md:text-xl font-bold">Lets connect</h3>

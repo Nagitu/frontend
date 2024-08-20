@@ -12,7 +12,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, techStack, description }) => {
   return (
     <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white transform transition-transform duration-300 hover:scale-105">
-      <div className="relative w-full h-32">
+      <div className="relative w-full h-20 md:h-24">
         <Image
           src={image}
           alt={`Screenshot of ${title}`}
@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, techStack, desc
             </button>
           ))}
         </div>
-        <p className="text-sm text-gray-700">{description}</p>
+        <p className="text-xs md:text-sm text-gray-700">{description}</p>
       </div>
     </div>
   );
