@@ -4,6 +4,8 @@ import ProjectCard from './card/ProjectCard';
 interface Project {
   image: string;
   title: string;
+  liveUrl?:string
+  githubLink?:string;
   techStack: string[];
   description: string;
 }
@@ -11,22 +13,25 @@ interface Project {
 const projects: Project[] = [
   {
     image: '/vercel.svg',
-    title: 'Nama Proyek 1',
-    techStack: ['Tech 1', 'Tech 2', 'Tech 3'],
-    description: 'Penjelasan singkat tentang proyek 1. Ini adalah deskripsi singkat yang memberikan gambaran umum mengenai proyek tersebut.',
+    title: 'recipe-app',
+    liveUrl:'',
+    githubLink:'',
+    techStack: ['React','Typescript','NodeJs','Express','Postgresql'],
+    description: 'web yang menampilkan resep makanan yang dibagikan oleh user ',
   },
   {
     image: '/vercel.svg',
-    title: 'Nama Proyek 2',
-    techStack: ['Tech 1', 'Tech 2', 'Tech 3'],
-    description: 'Penjelasan singkat tentang proyek 2. Ini adalah deskripsi singkat yang memberikan gambaran umum mengenai proyek tersebut.',
+    title: 'Article-web',
+    techStack: ['React','Typescript','NodeJs','Express','Postgresql'],
+    description: 'web yang menampilkan artikel dengan penerapan CRUD,Auth',
   },
   {
     image: 'vercel.svg',
-    title: 'Nama Proyek 3',
-    techStack: ['Tech 1', 'Tech 2', 'Tech 3'],
-    description: 'Penjelasan singkat tentang proyek 3. Ini adalah deskripsi singkat yang memberikan gambaran umum mengenai proyek tersebut.',
-  },
+    title: 'example profile we',
+    liveUrl:'https://example-store-profile.vercel.app/',
+    techStack: ['React','Typescript','NodeJs','NextJs'],
+    description: 'antarmuka web profil untuk warung pecel',
+  }
 ];
 
 const ProjectSection: React.FC = () => {
