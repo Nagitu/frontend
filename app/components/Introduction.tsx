@@ -14,12 +14,12 @@ const Introduction = () => {
                 </h1>
             </div>
             <div className='w-full md:w-1/2 flex items-center gap-5 justify-center'>
-            <Link href="/cv.pdf" passHref>
-      <a download>
+            <Link href="https://drive.google.com/file/d/1TvVzOA6iREDkUwRQGgl5CwPc2em-3jqQ/view?usp=drive_link" >
+   
         <button className='border bg-blue-500 hover:bg-blue-700 p-2 text-[10px] md:text-sm rounded-full text-white'>
           Download CV
         </button>
-      </a>
+      
     </Link>
             </div>
 
