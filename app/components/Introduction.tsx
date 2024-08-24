@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link"
+
 const Introduction = () => {
     return (
         <div
@@ -12,12 +14,13 @@ const Introduction = () => {
                 </h1>
             </div>
             <div className='w-full md:w-1/2 flex items-center gap-5 justify-center'>
-                <button className='border bg-blue-500 hover:bg-blue-500 p-2 text-[10px] md:text-sm rounded-full text-white'>
-                    Download CV
-                </button>
-                <button className='border bg-gray-400 hover:bg-blue-500 p-2 text-[10px] md:text-sm rounded-full text-black'>
-                    Download CV
-                </button>
+            <Link href="/cv.pdf" passHref>
+      <a download>
+        <button className='border bg-blue-500 hover:bg-blue-700 p-2 text-[10px] md:text-sm rounded-full text-white'>
+          Download CV
+        </button>
+      </a>
+    </Link>
             </div>
 
         </div>
