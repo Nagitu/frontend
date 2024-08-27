@@ -11,7 +11,7 @@ const FindMe = () => {
         <Image
             src="/avatar.jpeg"
             fill
-            objectFit="cover"
+            style={{ objectFit: 'cover' }}
             alt="Avatar"
             className="rounded-full"/>
     </div>
@@ -49,7 +49,8 @@ const FindMe = () => {
                 alt="Facebook Icon"
                 loading='lazy'
                 height={24}
-                width={24}/></a>
+                width={24}/>
+                </a>
         </div>
     </div>
 </div>
